@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name="sirex",
-    version="0.0.3",
+    version="0.0.4",
     description="Simple Regex - A package to use regex commands on strings using simple function calls",
     long_description=readme(),
     long_description_content_type="text/markdown",
