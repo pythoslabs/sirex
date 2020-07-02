@@ -109,3 +109,24 @@ def beginswith_number(str_):
         return True
     else : 
         return False
+
+
+# ---------- To do 
+
+def biggest_number(file_path) :
+	'''
+	Finds the biggest integer number mentioned in a text document
+	'''
+	return max(L_int)
+
+def remove_tags(str_) : 
+	'''
+	Removes the HTML tags and everything within it 
+	from a string and makes it clean
+	'''
+def remove_stop_words(str_)	:
+	'''
+	Removes all the words present in a list of stop words 
+	from the input string
+	'''
+	get_stopwords()

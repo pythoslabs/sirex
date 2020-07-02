@@ -1,0 +1,13 @@
+
+commands.txt
+*.whl
+build/lib/sirex/__init__.py
+build/lib/sirex/sirex.py
+dist/sirex-0.0.4.tar.gz
+sirex.egg-info/dependency_links.txt
+sirex.egg-info/PKG-INFO
+sirex.egg-info/SOURCES.txt
+sirex.egg-info/top_level.txt
+fix.txt
+sirex/__pycache__/__init__.cpython-35.pyc
+sirex/__pycache__/sirex.cpython-35.pyc
