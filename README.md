@@ -14,6 +14,7 @@ pip install sirex
 
 Usage 
 ```
-from sirex import * 
+import sirex
+
 sirex.count_numbers("Hell123ow 123")
 ```
