@@ -1,4 +1,4 @@
-from sirex import *
+import sirex 
 
 
 
