@@ -26,23 +26,32 @@ def biggest_number(str_):
     '''
     Returns the biggest number that comes as a block
     Usage : sirex.biggest_number('Hel3 1l199-123') 
-    Returns : str
+    Returns :
+	    int ( if the there is a number in the file )
+    	None ( if there is no number in the file)
     '''
     pattern = "[0-9]*"
     L_str = re.findall(pattern , str_ )
     L_int = [int(k) for k in L_str if k != '']  # Filter based on not null & convert each item into integer
-    return max(L_int)
+   
+    biggest_num = int(max(L_int)) if len(L_int) else None
+    return biggest_num
 
 def smallest_number(str_):
     '''
     Returns the smallest number that comes as a block
     Usage : sirex.biggest_number('Hel3 1l199-123') 
-    Returns : str
+    Returns :
+	    int ( if the there is a number in the file )
+    	None ( if there is no number in the file)
     '''
     pattern = "[0-9]*"
     L_str = re.findall(pattern , str_ )
     L_int = [int(k) for k in L_str if k != '']  # Filter based on not null & convert each item into integer
-    return min(L_int)
+    
+    smallest_num = int(min(L_int)) if len(L_int) else None
+    return smallest_num
+
 
 def replace_numbers(str_,sub_=""):
     '''
@@ -134,7 +143,7 @@ def file_to_str(fpath,singleline=True,convert_lower_case = False) :
     Reads a file and converts all the text into one string 
     arg ( singleline)  - convert everything to one single line, strips newline and carriage feeds
     
-    Usage : sirex.file_to_str('f.txt') # Searches for h and H
+    Usage : sirex.file_to_str('f.txt')  
     Returns : str
 
     '''
@@ -152,7 +161,7 @@ def word_count(fname):
 
     Returns the number of words in the file 
     Usage : 
-    sirex.word_count('f.txt') # Searches for h and H
+    sirex.word_count('f.txt')  
     Returns : int
     
     '''
@@ -162,7 +171,7 @@ def word_count(fname):
 def line_count(fname ):
     '''
     Returns the number of lines in the file 
-    sirex.line_count('f.txt') # Searches for h and H
+    sirex.line_count('f.txt')  
     Returns : int
     '''
     all_str = file_to_str(fname,singleline=False)
@@ -177,17 +186,23 @@ def occurance_file(str_, fname,case_sensitive = False):
     return len(re.findall(str_,all_str))
 
 
+
+def biggest_number_in_file(file_path) :
+    '''
+    Finds the biggest integer number mentioned in a text document
+    Returns : 
+    int ( if the there is a number in the file )
+    None ( if there is no number in the file)
+    '''
+    biggest_num = biggest_number(file_to_str(file_path))
+	return biggest_num
+
+
 # ------------------------------------ 
 # Functions to be implmented in later versions
 # 
 # ------------------------------------
 
-
-def biggest_number(file_path) :
-	'''
-	Finds the biggest integer number mentioned in a text document
-	'''
-	return max(L_int)
 
 def remove_tags(str_) : 
 	'''
