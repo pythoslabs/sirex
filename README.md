@@ -18,3 +18,11 @@ import sirex
 
 sirex.count_numbers("Hell123ow 123")
 ```
+
+
+Detailed Documentation
+
+Detailed documentation can be found here : 
+```
+sirex.readthedocs.io
+```
