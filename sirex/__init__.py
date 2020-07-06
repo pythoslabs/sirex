@@ -1,7 +1,18 @@
-from . import sirex
+import  sirex
+from sirex.numeric import * 
+from sirex.string import * 
+from sirex.file import * 
+from sirex.utils import * 
 
-__version__ = "0.0.4"
+# ----- external packages 
+import re 
 
+
+
+# ------------------ PACKAGE  VARIABLES
+
+
+__version__ = "0.1.0"
 
 
 __title__ = "sirex"

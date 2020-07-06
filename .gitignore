@@ -11,3 +11,7 @@ sirex.egg-info/top_level.txt
 fix.txt
 sirex/__pycache__/__init__.cpython-35.pyc
 sirex/__pycache__/sirex.cpython-35.pyc
+sirex/numeric/__pycache__/numeric.cpython-35.pyc
+sirex/numeric/__pycache__/__init__.cpython-35.pyc
+sirex/file/__pycache__/__init__.cpython-35.pyc
+*.pyc
