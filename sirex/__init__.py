@@ -1,12 +1,12 @@
-import  sirex
-from sirex.numeric import * 
-from sirex.string import * 
-from sirex.file import * 
-from sirex.utils import * 
+#from sirex.numeric import * 
+#from sirex.string import * 
+#from sirex.file import * 
+
+from .utils import *
+
 
 # ----- external packages 
 import re 
-
 
 
 # ------------------ PACKAGE  VARIABLES
@@ -23,3 +23,7 @@ __email__ = "pythoslabs@gmail.com"
 __license__ = "MIT"
 __copyright__ = "Copyright 2020 Pythos Labs and all contributors"
 
+# __author__ = '%s <%s>' % (release.author, release.author_email)
+# __license__  = release.license
+# __version__  = release.version
+# version_info = release.version_info
