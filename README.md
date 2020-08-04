@@ -29,9 +29,10 @@ print("result3a = {}".format(result3a))
 You can also find a tester file with sample code for usage of all the functions \
 and modules in the home folder of this package ```test_sirex.py```(https://github.com/pythoslabs/sirex/blob/master/test_sirex.py)
 
-
+<!-- 
 ## Detailed Documentation
 
 A detailed and updated documentation can be found here : 
 
 [sirex.readthedocs.io](https://sirex.readthedocs.io/en/latest/)
+-->
